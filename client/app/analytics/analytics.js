@@ -9,6 +9,14 @@ angular.module('courageousTrapeze.analytics', [])
     { 'time': 5, 'value': 21 }
   ];
 
+  $scope.responses = [
+    { 'time': 'Brant', 'value': 24 },
+    { 'time': 'Charlie', 'value': 10 },
+    { 'time': 'Johnny', 'value': 1 },
+    { 'time': 'Zack', 'value': 2 },
+    { 'time': 'Lu', 'value': 5 }
+  ];
+
   $scope.filt = function() {
     $scope.clicks = [
       { 'time': 1, 'value': 22 },
@@ -16,6 +24,14 @@ angular.module('courageousTrapeze.analytics', [])
       { 'time': 3, 'value': 2 },
       { 'time': 4, 'value': 11 },
       { 'time': 5, 'value': 21 }
+    ];
+
+    $scope.responses = [
+      { 'time': 'Brant', 'value': 24 },
+      { 'time': 'Charlie', 'value': 10 },
+      { 'time': 'Johnny', 'value': 1 },
+      { 'time': 'Zack', 'value': 2 },
+      { 'time': 'Lu', 'value': 5 }
     ];
   };
 
@@ -27,6 +43,14 @@ angular.module('courageousTrapeze.analytics', [])
       { 'time': 4, 'value': 11 },
       { 'time': 5, 'value': 11 }
     ];
+
+    $scope.responses = [
+      { 'time': 'Brant', 'value': 11 },
+      { 'time': 'Charlie', 'value': 10 },
+      { 'time': 'Johnny', 'value': 11 },
+      { 'time': 'Zack', 'value': 24 },
+      { 'time': 'Lu', 'value': 7 }
+    ];
   };
 
   $scope.filtthree = function() {
@@ -36,6 +60,14 @@ angular.module('courageousTrapeze.analytics', [])
       { 'time': 3, 'value': 234 },
       { 'time': 4, 'value': 232 },
       { 'time': 5, 'value': 213 }
+    ];
+
+    $scope.responses = [
+      { 'time': 'Brant', 'value': 4 },
+      { 'time': 'Charlie', 'value': 1 },
+      { 'time': 'Johnny', 'value': 4 },
+      { 'time': 'Zack', 'value': 22 },
+      { 'time': 'Lu', 'value': 5 }
     ];
   };
 }])
@@ -53,6 +85,7 @@ angular.module('courageousTrapeze.analytics', [])
 
       var svg = d3.select(el[0])
         .append('svg')
+        .attr("class", "axis")
         .attr('width', width + margin.left + margin.right)
         .attr('height', height + margin.top + margin.bottom)
         .append('g')
@@ -64,6 +97,7 @@ angular.module('courageousTrapeze.analytics', [])
       var xAxis = d3.svg.axis()
           .scale(x)
           .orient("bottom");
+
       
       var yAxis = d3.svg.axis()
           .scale(y)
@@ -122,7 +156,7 @@ angular.module('courageousTrapeze.analytics', [])
       var width = 400;
       var height = 300;
       var radius = Math.min(width, height) / 2;
-      var color = d3.scale.ordinal().range(['#98abc5', '#8a89a6', '#7b6888', '#6b486b', '#a05d56', '#d0743c', '#ff8c00']);
+      var color = d3.scale.ordinal().range(['#FF6138', '#FFFF9D', '#BEEB9F', '#79BD8F', '#00A388']);
       var arc = d3.svg.arc()
         .outerRadius(radius - 10)
         .innerRadius(radius - 70);
