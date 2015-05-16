@@ -4,6 +4,7 @@ html {
 
 body {
   /*margin: 0 0 0 20px;*/
+  background: #f8f8f8;
   height: 100%;
 }
 
@@ -214,6 +215,7 @@ g text {fill:#333;}
   border: 1px solid #DDD;
   float: left;
   margin: 10px;
+  background: #fff;
 }
 
 .analytics-filters {
@@ -226,7 +228,8 @@ g text {fill:#333;}
 }
 .analytics-filters li a {
   padding: 5px;
-  border: 1px solid #999;
+  border: 1px solid #ccc;
+  background: #fff;
 }
 
 path.line {
