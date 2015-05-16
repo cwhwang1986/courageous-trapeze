@@ -164,6 +164,7 @@ button:focus {
   margin: 10px;
   border: 1px solid #E0E4CC;
   padding: 0 10px;
+  background: #fff;
 }
 
 .menu {
@@ -227,9 +228,10 @@ g text {fill:#333;}
   display: inline;
 }
 .analytics-filters li a {
-  padding: 5px;
+  padding: 8px;
   border: 1px solid #ccc;
   background: #fff;
+  font-size: 14px;
 }
 
 path.line {
