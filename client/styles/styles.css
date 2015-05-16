@@ -4,6 +4,7 @@ html {
 
 body {
   /*margin: 0 0 0 20px;*/
+  background: #f8f8f8;
   height: 100%;
 }
 
@@ -207,12 +208,14 @@ button:focus {
 /* Analytics */
 
 rect {fill: #ACA1F8;}
-g {fill: #ccc;}
+g {fill: #999;}
+g text {fill:#333;}
 .card {  
   width: 400px;
   border: 1px solid #DDD;
   float: left;
   margin: 10px;
+  background: #fff;
 }
 
 .analytics-filters {
@@ -225,5 +228,37 @@ g {fill: #ccc;}
 }
 .analytics-filters li a {
   padding: 5px;
-  border: 1px solid #eee;
+  border: 1px solid #ccc;
+  background: #fff;
+}
+
+path.line {
+  fill: none;
+  stroke: #999;
+  stroke-width: 1.5px;
+}
+
+path.area {
+  fill: #e7e7e7;
+}
+
+.axis {
+  shape-rendering: crispEdges;
+}
+
+.x.axis line {
+  stroke: #fff;
+}
+
+.x.axis .minor {
+  stroke-opacity: .5;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.y.axis line, .y.axis path {
+  fill: none;
+  stroke: #999;
 }
